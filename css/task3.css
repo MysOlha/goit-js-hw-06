@@ -1,0 +1,21 @@
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+li {
+list-style: none;
+
+}
+
+li:not(:last-child) {
+margin-bottom: 20px;
+}
+
+img {
+    width: 1260px;
+    height: 750px;
+}
