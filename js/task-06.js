@@ -9,10 +9,12 @@ input.addEventListener('blur', inputBlur)
 function inputBlur(event) {
     console.log(event.currentTarget.value.length)
    if (event.currentTarget.value.length === Number(input.dataset.length)){
-    inputMain.classList.add("valid");
-    inputMain.classList.remove("invalid")
+     inputMain.classList.add("valid");
+     inputMain.classList.remove("invalid")
    } else  { 
   
-  inputMain.classList.add("invalid")
+    inputMain.classList.add("invalid");
+    inputMain.classList.remove("valid")
+  
 }
 }
